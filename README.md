@@ -1,2 +1,7 @@
 # Dagger2Demo2
-Dagger2 demo...
+### demo1
+- dagger2基本用法
+### demo2
+- 一个Component依赖多个Module
+### demo3
+- Component之间的依赖，子Component依赖父Component
