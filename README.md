@@ -13,7 +13,7 @@
 - 定义
 - 案例
 
-    ```java
+  ```java
     @Component(modules = {BackendModule.class, FrontendModule.class})
          interface MyComponent {
            MyWidget myWidget();
