@@ -9,3 +9,17 @@
 ### demo4(SubComponent)
 - 使用SubComponent来关联父子组件
 - 注意：当两个组件使用SubComponent关联时，子组件可以访问父组件中的一切对象（不需要父组件显示暴露）
+### demo5(Annotation Type Component.Builder)
+    ```java
+    @Component(modules = {BackendModule.class, FrontendModule.class})
+     interface MyComponent {
+       MyWidget myWidget();
+
+        @Component.Builder
+       interface Builder {
+         MyComponent build();
+         Builder backendModule(BackendModule bm);
+         Builder frontendModule(FrontendModule fm);
+       }
+     }
+    ```

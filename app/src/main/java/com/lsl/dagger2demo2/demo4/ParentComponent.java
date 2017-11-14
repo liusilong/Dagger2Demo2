@@ -12,6 +12,13 @@ import dagger.Component;
  */
 @Component(modules = ParentModule.class)
 public interface ParentComponent {
+
+    /**
+     * 父组件中获取子组件的方法
+     *
+     * @param childModule 子组件中需要的Module
+     * @return 子组件
+     */
     ChildComponent plusChildComponent(ChildModule childModule);
     // other method
     // void inject(...)
