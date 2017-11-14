@@ -12,6 +12,7 @@
 ### demo5(Annotation Type Component.Builder)
     - 定义
     - 案例
+
     @Component(modules = {BackendModule.class, FrontendModule.class})
      interface MyComponent {
        MyWidget myWidget();
