@@ -11,6 +11,7 @@
 - 注意：当两个组件使用SubComponent关联时，子组件可以访问父组件中的一切对象（不需要父组件显示暴露）
 ### demo5(Annotation Type Component.Builder)
 - 定义
+> A builder for a component. Components may have a single nested static abstract class or interface annotated with @Component.Builder. If they do, then the component's generated builder will match the API in the type.
 - 案例
 
     ```java
