@@ -12,15 +12,14 @@
 ### demo5(Annotation Type Component.Builder)
 - 定义
 - 案例
-
     @Component(modules = {BackendModule.class, FrontendModule.class})
-     interface MyComponent {
-       MyWidget myWidget();
+         interface MyComponent {
+           MyWidget myWidget();
 
-        @Component.Builder
-       interface Builder {
-         MyComponent build();
-         Builder backendModule(BackendModule bm);
-         Builder frontendModule(FrontendModule fm);
-       }
-     }
+            @Component.Builder
+           interface Builder {
+             MyComponent build();
+             Builder backendModule(BackendModule bm);
+             Builder frontendModule(FrontendModule fm);
+           }
+         }
