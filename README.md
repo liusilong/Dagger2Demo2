@@ -10,8 +10,8 @@
 - 使用SubComponent来关联父子组件
 - 注意：当两个组件使用SubComponent关联时，子组件可以访问父组件中的一切对象（不需要父组件显示暴露）
 ### demo5(Annotation Type Component.Builder)
-    - 定义
-    - 案例
+- 定义
+- 案例
 
     @Component(modules = {BackendModule.class, FrontendModule.class})
      interface MyComponent {
