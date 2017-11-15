@@ -22,7 +22,7 @@
     - Each component dependency must have an abstract setter method.
     - Each module dependency that Dagger can't instantiate itself (e.g, the module doesn't have a visible no-args constructor) must have an abstract setter method. Other module dependencies (ones that Dagger can instantiate) are allowed, but not required.
     - Non-abstract methods are allowed, but ignored as far as validation and builder generation are concerned.
-    - [Dagger2文档]("https://google.github.io/dagger/api/latest/")
+    - [Dagger2文档](https://google.github.io/dagger/api/latest/)
 - 案例
 
     ```java
