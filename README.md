@@ -41,5 +41,11 @@
     ```
 
 ### demo6(Custom Scope)
+- Scope使用来定义局部单例的，如可以在指定的几个Activity中使用某一个单例
 - 例子中自定义了一个`UserScope`用来规定`User`对象再三个Activity中保持单例
 - 当然，如果在某一个Activity中不想使用这个对象的单例，可以再分别定义`UserModule`和`UserComponent`来实现
+
+### demo7(Custom Qualifier)
+- Qualifier是用来区分同一类型的不同实例的
+- demo中有一个父类`Fruit`和两个子类`Apple`和`Pear`
+- 自定义了两个Qualifier用来区分不同`Fruit`类型的实例
