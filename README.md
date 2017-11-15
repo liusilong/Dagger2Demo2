@@ -15,6 +15,10 @@
 - 规则（Builders rules）
     - 必须存在一个没有参数的抽象方法，返回值必须是组件类型。（这个方法通常称为`build()`方法）
     - 其他所有的抽象方法必须采用单个参数并且返回类型必须是 void 或者 Builder类型 或者 Builder的超类型
+    - Each component dependency must have an abstract setter method.
+    - Each module dependency that Dagger can't instantiate itself (e.g, the module doesn't have a visible no-args constructor) must have an abstract setter method. Other module dependencies (ones that Dagger can instantiate) are allowed, but not required.
+    - Non-abstract methods are allowed, but ignored as far as validation and builder generation are concerned.
+    - [Dagger2文档]("https://google.github.io/dagger/api/latest/")
 - 案例
 
     ```java
@@ -31,3 +35,6 @@
            }
          }
     ```
+### demo6(Custom Scope)
+    - 例子中自定义了一个`UserScope`用来规定`User`对象再三个Activity中保持单例
+    - 当然，如果在某一个Activity中不想使用这个对象的单例，可以再分别定义`UserModule`和`UserComponent`来实现
