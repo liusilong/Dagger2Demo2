@@ -35,6 +35,7 @@
            }
          }
     ```
+
 ### demo6(Custom Scope)
     - 例子中自定义了一个`UserScope`用来规定`User`对象再三个Activity中保持单例
     - 当然，如果在某一个Activity中不想使用这个对象的单例，可以再分别定义`UserModule`和`UserComponent`来实现
